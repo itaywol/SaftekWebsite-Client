@@ -7,6 +7,8 @@
     "@types/node": "11.10.4",
     "@types/react": "16.8.6",
     "@types/react-dom": "16.8.2",
+    "bootstrap": "^4.3.1",
+    "less": "^3.9.0",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-scripts": "2.1.5",
@@ -34,11 +36,14 @@
   "devDependencies": {
     "awesome-typescript-loader": "^5.2.1",
     "css-loader": "^2.1.0",
+    "file-loader": "^3.0.1",
+    "less-loader": "^4.1.0",
     "prettier": "^1.16.4",
     "source-map-loader": "^0.2.4",
     "style-loader": "^0.23.1",
     "tslint": "^5.13.1",
-    "tslint-config-prettier": "^1.18.0"
+    "tslint-config-prettier": "^1.18.0",
+    "webpack-cli": "^3.2.3"
   },
   "repository": {
     "type": "git",

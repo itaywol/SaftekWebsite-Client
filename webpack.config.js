@@ -24,6 +24,32 @@ module.exports = {
       { test: /\.css$/, use: ['style-loader', 'css-loader'] },
 
       { test: /\.svg$/, use: ['svg-loader'] },
+
+      {
+        test: /\.less$/,
+        use: [
+          { loader: 'style-loader' },
+          {
+            loader: 'css-loader',
+            options: {
+              'source-map': 'true',
+              modules: 'true',
+              localIdentName: '[local]___[hash:base64:5]',
+            },
+          },
+          { loader: 'less-loader' },
+        ],
+      },
+
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {},
+          },
+        ],
+      },
     ],
   },
 
