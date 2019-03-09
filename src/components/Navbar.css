@@ -1,7 +1,7 @@
 :root {
   --color-primary-regular: #455a64;
   --color-primary-light: #718792;
-  --color-primary-dark: #1c313a;
+  --color-primay-dark: #1c313a;
   --font-color-over-light: #000000;
   --font-color-over-dark: #ffffff;
 }
@@ -24,36 +24,4 @@
 
 .font-over-light {
   color: var(--font-color-over-light);
-}
-.page-test {
-  height: 1500px;
-}
-
-.stick-header {
-  position: sticky;
-  position: -webkit-sticky;
-}
-
-.jumbo-header {
-  padding: 3vw;
-  direction: rtl;
-  text-align: right;
-  margin: 0;
-}
-
-.jumbo-header img {
-  margin: auto;
-}
-
-.jumbo-c-item {
-  padding: 5vh;
-  margin: 0 auto 0 auto;
-  direction: rtl;
-  text-align: center;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
 }

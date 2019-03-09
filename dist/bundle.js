@@ -146,6 +146,21 @@ exports.push([module.i, "", ""]);
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/components/Navbar.css":
+/*!*************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/Navbar.css ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
+// Module
+exports.push([module.i, ":root {\n  --color-primary-regular: #455a64;\n  --color-primary-light: #718792;\n  --color-primay-dark: #1c313a;\n  --font-color-over-light: #000000;\n  --font-color-over-dark: #ffffff;\n}\n.bg-color-regular {\n  background-color: var(--color-primary-regular);\n}\n.bg-color-light {\n  background-color: var(--color-primary-light);\n}\n.bg-color-dark {\n  background-color: var(--color-primary-dark);\n}\n.font-over-dark {\n  color: var(--font-color-over-dark));\n}\n.font-over-light {\n  color: var(--font-color-over-light);\n}\n.logo {\n  max-width: 250px;\n  color-adjust: white;\n}\n.navbar {\n  height: 100px;\n}\n.nav-item {\n  padding: 15px;\n  border: 1px solid black;\n}\n\n.nav-item:hover {\n  background-color:var(--color-primary-light);\n}\n", ""]);
+
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/index.css":
 /*!*************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/index.css ***!
@@ -158,17 +173,6 @@ exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/di
 exports.push([module.i, "body {\r\n  margin: 0;\r\n  padding: 0;\r\n  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',\r\n    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',\r\n    sans-serif;\r\n  -webkit-font-smoothing: antialiased;\r\n  -moz-osx-font-smoothing: grayscale;\r\n}\r\n\r\ncode {\r\n  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',\r\n    monospace;\r\n}\r\n", ""]);
 
 
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/less-loader/dist/cjs.js!./src/components/Navbar.less":
-/*!***************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ref--8-1!./node_modules/less-loader/dist/cjs.js!./src/components/Navbar.less ***!
-  \***************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-throw new Error("Module build failed (from ./node_modules/css-loader/dist/cjs.js):\nValidationError: CSS Loader Invalid Options\n\noptions should NOT have additional properties\noptions.modules should be boolean\noptions.modules should be equal to one of the allowed values\noptions.modules should match some schema in anyOf\n\n    at validateOptions (C:\\Users\\נוי\\איתי\\websites\\saftek-proj\\client\\SaftekWebsite-Client\\node_modules\\schema-utils\\src\\validateOptions.js:32:11)\n    at Object.loader (C:\\Users\\נוי\\איתי\\websites\\saftek-proj\\client\\SaftekWebsite-Client\\node_modules\\css-loader\\dist\\index.js:44:28)");
 
 /***/ }),
 
@@ -860,15 +864,15 @@ exports.default = App;
 
 /***/ }),
 
-/***/ "./src/components/Navbar.less":
-/*!************************************!*\
-  !*** ./src/components/Navbar.less ***!
-  \************************************/
+/***/ "./src/components/Navbar.css":
+/*!***********************************!*\
+  !*** ./src/components/Navbar.css ***!
+  \***********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--8-1!../../node_modules/less-loader/dist/cjs.js!./Navbar.less */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/less-loader/dist/cjs.js!./src/components/Navbar.less");
+var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!./Navbar.css */ "./node_modules/css-loader/dist/cjs.js!./src/components/Navbar.css");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -909,7 +913,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __importStar(__webpack_require__(/*! react */ "react"));
 __webpack_require__(/*! ../../node_modules/bootstrap/dist/css/bootstrap.css */ "./node_modules/bootstrap/dist/css/bootstrap.css");
-__webpack_require__(/*! ./Navbar.less */ "./src/components/Navbar.less");
+__webpack_require__(/*! ./Navbar.css */ "./src/components/Navbar.css");
 function NavigationBar(props) {
     var navItems = props.navItems, logoUrl = props.logoUrl, companyName = props.companyName;
     console.log(props);
