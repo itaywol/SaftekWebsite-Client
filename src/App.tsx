@@ -52,7 +52,7 @@ class App extends Component {
           id="מוצרים"
         >
           <h1>המוצרים שלנו</h1>
-          <RBS.Carousel interval={3000}>
+          <RBS.Carousel interval={8000}>
             <RBS.CarouselItem>
               <RBS.Jumbotron
                 fluid={true}
@@ -76,6 +76,13 @@ class App extends Component {
               >
                 <h2>מנעול ה RT</h2>
                 <RBS.Image src={rtLockJpg} />
+                <p>
+                  מנעול עתיר טכנולוגיה חדשנית שפותח בשיתוף פעולה של חברות KABA
+                  ILCO , KABA SAFLOK מנעול פשוט חכם לתפעול באמצעות כרטיס קרבה
+                  הידועים באמינותם, ומנגנונים רכים להפעלה - מתאים לכל גיל,.
+                  מנעול פשוט לתחזוקה – ממש כמו כל מנעול מכני אחר, מיעוט חלקים
+                  וללא רכבי אלקטרוניקה גלויים, אין צורך בטכנאים מומחים.{' '}
+                </p>
               </RBS.Jumbotron>
             </RBS.CarouselItem>
           </RBS.Carousel>
