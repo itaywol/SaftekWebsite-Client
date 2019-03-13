@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Poppins|Roboto|Rubik');
+$green-color: #AAEBA3;
+$gray-color: #C7C7CE;
+$deep-blue-color: #231B64;
+$white-color: #FFF;
+
+.navbar-brand{
+    color:$white-color;
+}
+
+.navbar-toggler-icon{
+    fill:$white-color;
+}
+
+.navbar-toggler:focus{
+    outline:none;
+}
+
+.custom-nav a{
+    color:$green-color;
+}
+
+.bg-custom{
+    background-color:black;
+}
+
+.bg-white{
+    background-color:$white-color;
+}

@@ -1,6 +1,29 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import * as React from "react";
+import {render} from "react-dom";
+import {AppContainer} from "react-hot-loader";
+import App from "./app/App";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const rootEl = document.getElementById("root");
+
+render(
+    <AppContainer>
+        <App/>
+    </AppContainer>,
+    rootEl
+);
+
+// Hot Module Replacement API
+declare let module: { hot: any };
+
+if (module.hot) {
+    module.hot.accept("./app/App", () => {
+        const NewApp = require("./app/App").default;
+
+        render(
+            <AppContainer>
+                <NewApp/>
+            </AppContainer>,
+            rootEl
+        );
+    });
+}
