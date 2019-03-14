@@ -1,29 +1,49 @@
 @import url('https://fonts.googleapis.com/css?family=Anton|Poppins|Roboto|Rubik');
-$green-color: #AAEBA3;
-$gray-color: #C7C7CE;
-$deep-blue-color: #231B64;
-$white-color: #FFF;
+$green-color: #aaeba3;
+$gray-color: #c7c7ce;
+$deep-blue-color: #231b64;
+$white-color: #fff;
 
-.navbar-brand{
-    color:$white-color;
+.custom-nav {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+  padding-top: 3%;
+}
+.navbar-nav {
+  padding-bottom: 20px;
 }
 
-.navbar-toggler-icon{
-    fill:$white-color;
+.custom-nav .container {
+  width: 90%;
 }
 
-.navbar-toggler:focus{
-    outline:none;
+.bg-custom {
+  background-color: black;
 }
 
-.custom-nav a{
-    color:$green-color;
+.navbar-brand {
+  font-weight: bold;
+  letter-spacing: -3px;
+  font-size: 3em;
+}
+.brand::first-letter {
+  color: #aaeba3 !important;
 }
 
-.bg-custom{
-    background-color:black;
+@media (max-width: 575.98px) {
 }
 
-.bg-white{
-    background-color:$white-color;
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
 }
