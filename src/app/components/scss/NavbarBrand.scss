@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Poppins|Roboto|Rubik');
+$green-color: #aaeba3;
+$gray-color: #c7c7ce;
+$deep-blue-color: #231b64;
+$white-color: #fff;
+
+//only applies on the brand , floats to the left insive the navbar container
+.navbar-brand {
+  text-decoration: none;
+  font-weight: 900;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+  font-size: 2rem;
+  letter-spacing: -3px;
+  float: left;
+}
+
+//make logo first letter green
+.navbar-brand::first-letter {
+  color: $green-color;
+}
