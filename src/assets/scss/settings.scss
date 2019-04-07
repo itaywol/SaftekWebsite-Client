@@ -1,0 +1,30 @@
+//responsivenesss variables
+$tablet-width: 846px;
+$phone-width: 685px;
+
+//z-index variables
+$behind: -1;
+$website-background: 0;
+$website-foreground: 10;
+$menus: 20;
+$modals: 30;
+
+//colors
+$primary-color: #278feb;
+$secondary-color: #85e37b;
+
+$color: (
+  secondary-color: $secondary-color,
+  secondary-tint: lighten($secondary-color, 30%),
+  secondary-shade: darken($secondary-color, 30%),
+  primary-color: $primary-color,
+  primary-tint: lighten($primary-color, 30%),
+  primary-shade: darken($primary-color, 10%),
+  white-color: #fff,
+  black-color: darken($primary-color, 60%),
+  gray-color: #707070,
+);
+
+@function color($desired-color) {
+  @return map-get($color, $desired-color);
+}

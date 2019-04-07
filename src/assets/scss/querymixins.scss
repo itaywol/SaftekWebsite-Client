@@ -1,0 +1,19 @@
+@import './settings.scss';
+
+@mixin for-desktop {
+  @media Screen and(min-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin for-tablet {
+  @media Screen and(min-width: $phone-width) and (max-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin for-phone {
+  @media Screen and (max-width: $phone-width) {
+    @content;
+  }
+}

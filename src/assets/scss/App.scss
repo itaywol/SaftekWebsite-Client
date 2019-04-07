@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Poppins|Roboto|Rubik');
+@import './querymixins.scss';
+@import './settings.scss';
+@import './globals.scss';
+
+.app {
+  margin: 0 auto;
+  width: 100%;
+
+  @include for-desktop {
+    width: 80%;
+  }
+
+  @include for-tablet {
+    width: 100%;
+  }
+}

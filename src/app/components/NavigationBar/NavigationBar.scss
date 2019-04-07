@@ -1,0 +1,153 @@
+@import '../../../assets/scss/settings.scss';
+@import '../../../assets/scss/querymixins.scss';
+
+.NavigationBar {
+  display: grid;
+  grid-template-columns: 180px auto auto 50px;
+  grid-auto-rows: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: $menus;
+  background-color: white;
+
+  @include for-phone {
+    grid-template-columns: auto;
+  }
+
+  width: 100%;
+  height: 80px;
+  align-items: center;
+
+  &-brand {
+    display: block;
+    margin-left: 10%;
+    margin-bottom: 0; //disabling automated margin.
+    padding: 10px;
+
+    a {
+      text-decoration: none;
+      color: color(primary-color);
+      font-weight: BOLDER;
+      display: block;
+    }
+
+    a::first-letter {
+      color: color(secondary-color);
+    }
+
+    @include for-phone {
+      margin: 0 auto;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    font-size: 0.8rem;
+    display: block;
+
+    li {
+      display: inline-block;
+      padding: 10px;
+
+      a {
+        text-decoration: none;
+        color: color(gray-color);
+        transition: 0.2s ease;
+      }
+      a:hover {
+        color: color(primary-color);
+      }
+    }
+
+    @include for-phone {
+      // display: none;
+    }
+  }
+
+  div.assisting-buttons {
+    margin: 0 0 0 auto;
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+
+    @include for-phone {
+      // display: none;
+    }
+
+    a.button {
+      background-color: transparent;
+      border: none;
+      display: inline-block;
+      text-align: center;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      width: fit-content;
+      height: fit-content;
+      margin: 0;
+      padding: 0;
+      padding-left: 15px;
+      padding-right: 15px;
+      font-size: 0.8rem;
+      transition: 0.4s ease-in;
+
+      img {
+        margin: 0;
+        padding: 0;
+        width: 25%;
+      }
+
+      p {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        padding-left: 5px;
+        padding-right: 5px;
+        color: color(gray-color);
+        transition: 0.4s ease-in;
+      }
+
+      a:active {
+        outline: 0;
+        border: 0;
+      }
+
+      a:focus {
+        outline: 0 !important;
+        border: 0 !important;
+      }
+
+      p:hover {
+        color: color(primary-color);
+      }
+
+      img:hover {
+        fill: color(primary-color);
+        color: color(primary-color);
+      }
+    }
+  }
+
+  a.search-button {
+    background-color: color(primary-color);
+    height: 100%;
+    width: 100%;
+    display: flex;
+
+    @include for-phone {
+      display: none;
+    }
+
+    img {
+      margin: 0 auto;
+      width: 40%;
+      height: 30%;
+      justify-self: center;
+      vertical-align: middle;
+      align-self: center;
+    }
+  }
+}

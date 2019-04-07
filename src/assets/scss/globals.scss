@@ -1,0 +1,30 @@
+@import './settings.scss';
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Poppins');
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  opacity: 1;
+  animation: FadeinOpacity 0.3s linear both;
+}
+
+@keyframes FadeinOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.bg-dark {
+  background-color: color(black-color) !important;
+}
+
+.bg-white {
+  background-color: color(white-color) !important;
+}
